@@ -18,7 +18,7 @@ app.use(cors({
     credentials: true
 }));
 
-app.listen(port , ()=>{
+app.listen(PORT, '0.0.0.0', ()=>{
     console.log("Server is Connected...!!!");
     mongoose.connect(process.env.MongoDB).
     then(() => {
