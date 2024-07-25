@@ -15,7 +15,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: 'https://elegant-abodes.onrender.com',
+    origin: 'https://elegantabodes-client1.onrender.com',
     credentials: true
 }));
 
