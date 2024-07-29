@@ -15,7 +15,9 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin : "https://elegantabodes-client1.onrender.com/",
+    origin: 'https://elegantabodes-client1.onrender.com',
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
 }));
 
